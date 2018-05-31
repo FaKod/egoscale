@@ -111,6 +111,25 @@ func (client *Client) GetDomain(name string) (*DNSDomain, error) {
 	return d.Domain, nil
 }
 
+// GetDomains gets DNS domains
+func (exo *Client) GetDomains() ([]DNSDomain, error) {
+	resp, err := exo.dnsRequest("/v1/domains", "", "GET")
+	if err != nil {
+		return nil, err
+	}
+
+	var d []DNSDomainResponse
+	if err := json.Unmarshal(resp, &d); err != nil {
+		return nil, err
+	}
+
+	domains := make([]DNSDomain, 0, len(d))
+	for _, dom := range d {
+		domains = append(domains, *dom.Domain)
+	}
+	return domains, nil
+}
+
 // DeleteDomain delets a DNS domain
 func (client *Client) DeleteDomain(name string) error {
 	_, err := client.dnsRequest("/v1/domains/"+name, "", "DELETE")

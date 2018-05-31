@@ -21,6 +21,7 @@ var configFilePath string
 var cfgFilePath string
 
 var cs *egoscale.Client
+var csDNS *egoscale.Client
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
@@ -52,10 +53,16 @@ func buildClient() {
 	}
 
 	var err error
-	cs, err = client.BuildClient(configFilePath, region)
+	cs, err = client.BuildClient(configFilePath, region, false)
 	if err != nil {
 		log.Fatal(err)
 	}
+	//WIP waiting for a better solution
+	csDNS, err = client.BuildClient(configFilePath, region, true)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -67,6 +74,32 @@ func initConfig() {
 
 	for env, flag := range envs {
 		flag := RootCmd.Flags().Lookup(flag)
+		if value := os.Getenv(env); value != "" {
+			flag.Value.Set(value)
+		}
+	}
+
+	envEndpoint := os.Getenv("CLOUDSTACK_ENDPOINT")
+	envKey := os.Getenv("CLOUDSTACK_KEY")
+	envSecret := os.Getenv("CLOUDSTACK_SECRET")
+
+	if envEndpoint != "" && envKey != "" && envSecret != "" {
+		cs = egoscale.NewClient(envEndpoint, envKey, envSecret)
+		return
+	}
+
+	if cfgFilePath != "" {
+		configFilePath = cfgFilePath
+		return
+	}
+
+	envs := map[string]string{
+		"CLOUDSTACK_CONFIG": "config",
+		"CLOUDSTACK_REGION": "region",
+	}
+
+	for env, flag := range envs {
+		flag := rootCmd.Flags().Lookup(flag)
 		if value := os.Getenv(env); value != "" {
 			flag.Value.Set(value)
 		}
