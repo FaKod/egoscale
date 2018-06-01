@@ -48,7 +48,7 @@ func init() {
 }
 
 func buildClient() {
-	if cs != nil {
+	if cs != nil && csDNS != nil {
 		return
 	}
 
@@ -85,32 +85,8 @@ func initConfig() {
 
 	if envEndpoint != "" && envKey != "" && envSecret != "" {
 		cs = egoscale.NewClient(envEndpoint, envKey, envSecret)
-		return
-	}
-
-	if cfgFilePath != "" {
-		configFilePath = cfgFilePath
-		return
-	}
-
-	envs := map[string]string{
-		"CLOUDSTACK_CONFIG": "config",
-		"CLOUDSTACK_REGION": "region",
-	}
-
-	for env, flag := range envs {
-		flag := rootCmd.Flags().Lookup(flag)
-		if value := os.Getenv(env); value != "" {
-			flag.Value.Set(value)
-		}
-	}
-
-	envEndpoint := os.Getenv("CLOUDSTACK_ENDPOINT")
-	envKey := os.Getenv("CLOUDSTACK_KEY")
-	envSecret := os.Getenv("CLOUDSTACK_SECRET")
-
-	if envEndpoint != "" && envKey != "" && envSecret != "" {
-		cs = egoscale.NewClient(envEndpoint, envKey, envSecret)
+		envEndpoint := strings.Replace(envEndpoint, "compute", "dns", 1)
+		csDNS = egoscale.NewClient(envEndpoint, envKey, envSecret)
 		return
 	}
 
