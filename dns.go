@@ -112,8 +112,8 @@ func (client *Client) GetDomain(name string) (*DNSDomain, error) {
 }
 
 // GetDomains gets DNS domains
-func (exo *Client) GetDomains() ([]DNSDomain, error) {
-	resp, err := exo.dnsRequest("/v1/domains", "", "GET")
+func (client *Client) GetDomains() ([]DNSDomain, error) {
+	resp, err := client.dnsRequest("/v1/domains", "", "GET")
 	if err != nil {
 		return nil, err
 	}
