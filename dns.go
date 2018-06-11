@@ -48,9 +48,27 @@ type DNSRecord struct {
 	Prio       int    `json:"prio,omitempty"`
 }
 
+// DNSRecordUpdate represents a DNS record
+type DNSRecordUpdate struct {
+	ID         int64  `json:"id,omitempty"`
+	DomainID   int64  `json:"domain_id,omitempty"`
+	Name       string `json:"name,omitempty"`
+	TTL        int    `json:"ttl,omitempty"`
+	CreatedAt  string `json:"created_at,omitempty"`
+	UpdatedAt  string `json:"updated_at,omitempty"`
+	Content    string `json:"content,omitempty"`
+	RecordType string `json:"record_type,omitempty"`
+	Prio       int    `json:"prio,omitempty"`
+}
+
 // DNSRecordResponse represents the creation of a DNS record
 type DNSRecordResponse struct {
 	Record DNSRecord `json:"record"`
+}
+
+// DNSRecordUpdateResponse represents the creation of a DNS record
+type DNSRecordUpdateResponse struct {
+	Record DNSRecordUpdate `json:"record"`
 }
 
 // DNSErrorResponse represents an error in the API
@@ -199,8 +217,8 @@ func (client *Client) CreateRecord(name string, rec DNSRecord) (*DNSRecord, erro
 }
 
 // UpdateRecord updates a DNS record
-func (client *Client) UpdateRecord(name string, rec DNSRecord) (*DNSRecord, error) {
-	body, err := json.Marshal(DNSRecordResponse{
+func (client *Client) UpdateRecord(name string, rec DNSRecordUpdate) (*DNSRecord, error) {
+	body, err := json.Marshal(DNSRecordUpdateResponse{
 		Record: rec,
 	})
 	if err != nil {
