@@ -41,5 +41,5 @@ func getRecordIDByName(csDNS *egoscale.Client, domainName, recordName string) (i
 }
 
 func init() {
-	rootCmd.AddCommand(dnsCmd)
+	RootCmd.AddCommand(dnsCmd)
 }
