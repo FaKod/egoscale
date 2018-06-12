@@ -10,7 +10,7 @@ import (
 
 func init() {
 
-	for i := A; i < URL; i++ {
+	for i := A; i <= URL; i++ {
 
 		var cmdUpdateRecord = &cobra.Command{
 			Use:   fmt.Sprintf("%s <domain name> <record name | id>", record.String(i)),
