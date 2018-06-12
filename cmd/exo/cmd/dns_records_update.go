@@ -10,18 +10,18 @@ import (
 
 func init() {
 
-	for i := A; i <= URL; i++ {
+	for i := egoscale.A; i <= egoscale.URL; i++ {
 
 		var cmdUpdateRecord = &cobra.Command{
-			Use:   fmt.Sprintf("%s <domain name> <record name | id>", record.String(i)),
-			Short: fmt.Sprintf("Update %s record type to a domain", record.String(i)),
+			Use:   fmt.Sprintf("%s <domain name> <record name | id>", egoscale.Record.String(i)),
+			Short: fmt.Sprintf("Update %s record type to a domain", egoscale.Record.String(i)),
 			Run: func(cmd *cobra.Command, args []string) {
 				if len(args) < 2 {
 					cmd.Usage()
 					return
 				}
 
-				recordID, err := getRecordIDByName(csDNS, args[0], args[1])
+				recordID, err := csDNS.GetRecordIDByName(args[0], args[1])
 				if err != nil {
 					log.Fatal(err)
 				}
@@ -44,11 +44,11 @@ func init() {
 					log.Fatal(err)
 				}
 
-				resp, err := csDNS.UpdateRecord(args[0], egoscale.DNSRecordUpdate{
+				resp, err := csDNS.UpdateRecord(args[0], egoscale.UpdateDNSRecord{
 					ID:         recordID,
 					DomainID:   domain.ID,
 					TTL:        ttl,
-					RecordType: record.String(i),
+					RecordType: egoscale.Record.String(i),
 					Name:       name,
 					Content:    addr,
 				})
@@ -65,38 +65,3 @@ func init() {
 		dnsUpdateCmd.AddCommand(cmdUpdateRecord)
 	}
 }
-
-//go:generate stringer -type=record
-
-type record int
-
-const (
-	// A record type
-	A record = iota
-	// AAAA record type
-	AAAA
-	// ALIAS record type
-	ALIAS
-	// CNAME record type
-	CNAME
-	// HINFO record type
-	HINFO
-	// MX record type
-	MX
-	// NAPTR record type
-	NAPTR
-	// NS record type
-	NS
-	// POOL record type
-	POOL
-	// SPF record type
-	SPF
-	// SRV record type
-	SRV
-	// SSHFP record type
-	SSHFP
-	// TXT record type
-	TXT
-	// URL record type
-	URL
-)
