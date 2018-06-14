@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>
+  cs createNetwork &ndash; Egoscale, the Go toolbox for Exoscale
+</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://exoscale.github.io/egoscale">Egoscale library</a>
+        </div>
+        <div class="navbar-start navbar-menu is-active">
+            
+
+    <a class="navbar-item" href="/egoscale/cli/" title="">exo cli</a>
+
+    <a class="navbar-item active" href="/egoscale/cs/" title="">cs in go</a>
+
+    <a class="navbar-item" href="https://godoc.org/github.com/exoscale/egoscale/" title="">godoc</a>
+
+    <a class="navbar-item" href="https://github.com/exoscale/egoscale/" title="">source</a>
+
+
+        </div>
+        <div class="navbar-end is-right navbar-menu">
+            <div style="margin-top:.7rem">
+                <a class="button is-primary" href="https://github.com/exoscale/egoscale/releases">
+                    <span class="icon"><i class="fas fa-download"></i></span>
+                    <span>Download</span>
+                </a>
+                <iframe src="https://ghbtns.com/github-btn.html?user=exoscale&repo=egoscale&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    
+<section class="hero is-light is-bold">
+<div class="hero-body">
+<div class="container">
+  <h1 class="title is-1 is-spaced">cs createNetwork</h1>
+  <p class="subtitle">Creates a network</p>
+</div>
+</div>
+</section>
+
+<div class="container">
+  <div class="content">
+    <p></p>
+
+<h2 id="flags">Flags</h2>
+
+<p>&ndash; <code>--account value</code> - account who will own the network<br />
+&ndash; <code>--aclid value</code> - Network ACL Id associated for the network<br />
+&ndash; <code>--acltype value</code> - Access control type; supported values are account and domain. In 3.0 all shared networks should have aclType=Domain, and all Isolated networks - Account. Account means that only the account owner can use the network, domain - all accouns in the domain can use the network<br />
+&ndash; <code>--displaynetwork value</code> - an optional field, whether to the display the network to the end user or not. (default: unset)<br />
+&ndash; <code>--displaytext value</code> - [required] the display text of the network<br />
+&ndash; <code>--domainid value</code> - domain ID of the account owning a network<br />
+&ndash; <code>--endip value</code> - the ending IP address in the network IP range. If not specified, will be defaulted to startIP<br />
+&ndash; <code>--endipv6 value</code> - the ending IPv6 address in the IPv6 network range<br />
+&ndash; <code>--gateway value</code> - the gateway of the network. Required for Shared networks and Isolated networks when it belongs to VPC<br />
+&ndash; <code>--ip6cidr value</code> - the CIDR of IPv6 network, must be at least /64<br />
+&ndash; <code>--ip6gateway value</code> - the gateway of the IPv6 network. Required for Shared networks and Isolated networks when it belongs to VPC<br />
+&ndash; <code>--isolatedpvlan value</code> - the isolated private vlan for this network<br />
+&ndash; <code>--name value</code> - [required] the name of the network<br />
+&ndash; <code>--netmask value</code> - the netmask of the network. Required for Shared networks and Isolated networks when it belongs to VPC<br />
+&ndash; <code>--networkdomain value</code> - network domain<br />
+&ndash; <code>--networkofferingid value</code> - [required] the network offering id<br />
+&ndash; <code>--physicalnetworkid value</code> - the Physical Network ID the network belongs to<br />
+&ndash; <code>--startip value</code> - the beginning IP address in the network IP range<br />
+&ndash; <code>--startipv6 value</code> - the beginning IPv6 address in the IPv6 network range<br />
+&ndash; <code>--subdomainaccess value</code> - Defines whether to allow subdomains to use networks dedicated to their parent domain(s). Should be used with aclType=Domain, defaulted to allow.subdomain.network.access global config if not specified (default: unset)<br />
+&ndash; <code>--vlan value</code> - the ID or VID of the network<br />
+&ndash; <code>--zoneid value</code> - [required] the Zone ID for the network<br />
+&ndash; <code>--debug, -d</code> -<br />
+&ndash; <code>--dry-run, -D</code> -<br />
+&ndash; <code>--region value, -r value</code> -</p>
+
+<h2 id="global-flags">Global Flags</h2>
+
+<p>&ndash; <code>--debug, -d</code> - debug mode on<br />
+&ndash; <code>--dry-run, -D</code> - produce a cURL ready URL<br />
+&ndash; <code>--dry-json, -j</code> - produce a JSON preview of the query<br />
+&ndash; <code>--region value, -r value</code> - cloudstack.ini file section name<br />
+&ndash; <code>--theme value, -t value</code> - syntax highlighting theme, see: <a href="https://xyproto.github.io/splash/docs/">https://xyproto.github.io/splash/docs/</a><br />
+&ndash; <code>--help, -h</code> - show help<br />
+&ndash; <code>--version, -v</code> - print the version</p>
+
+<h6 id="auto-generated-by-urfave-cli-on-14-jun-2018">Auto generated by urfave/cli on 14-Jun-2018</h6>
+  </div>
+</div>
+
+</main>
+
+
+
+<footer class="footer" style="clear:both">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>Made with ❤️ in Crissier, Switzerland 🇨🇭.</p>
+            <p>Gopher made with <a href="https://gopherize.me/">Gopherize.me</a>.
+            Hosted on <a href="https://github.com/exoscale/egoscale">GitHub</a>.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>

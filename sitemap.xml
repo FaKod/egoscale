@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/activateip6/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/addiptonic/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/addnictovirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/associateipaddress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/authorizesecuritygroupegress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/authorizesecuritygroupingress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/changeserviceforvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/copytemplate/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createaffinitygroup/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createinstancegroup/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createnetwork/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createsshkeypair/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createsecuritygroup/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createsnapshot/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createtags/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createtemplate/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/createuser/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deleteaffinitygroup/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deletenetwork/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deletesshkeypair/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deletesecuritygroup/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deletesnapshot/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deletetags/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deleteuser/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/deployvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/destroyvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/disableaccount/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/disassociateipaddress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/enableaccount/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/expungevirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/getvmpassword/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/getvirtualmachineuserdata/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listaccounts/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listaffinitygroups/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listapis/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listeventtypes/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listevents/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listhosts/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listinstancegroups/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listnetworkofferings/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listnetworks/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listnics/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listpublicipaddresses/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listresourcedetails/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listresourcelimits/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listsshkeypairs/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listsecuritygroups/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listserviceofferings/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listsnapshots/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listtags/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listtemplates/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listusers/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listvirtualmachines/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listvolumes/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/listzones/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/migratevirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/preparetemplate/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/queryasyncjobresult/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/rebootvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/recovervirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/registersshkeypair/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/registertemplate/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/registeruserkeys/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/removeipfromnic/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/removenicfromvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/resetpasswordforvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/resetsshkeyforvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/resizevolume/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/restartnetwork/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/restorevirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/revertsnapshot/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/revokesecuritygroupegress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/revokesecuritygroupingress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/scalevirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/startvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/stopvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/updatedefaultnicforvirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/updateipaddress/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/updatenetwork/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/updateuser/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/updatevmaffinitygroup/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/updatevirtualmachine/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cli/</loc>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://exoscale.github.io/egoscale/cs/</loc>
+    <lastmod>2018-06-14T13:53:51+00:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>
+  cs listResourceLimits &ndash; Egoscale, the Go toolbox for Exoscale
+</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://exoscale.github.io/egoscale">Egoscale library</a>
+        </div>
+        <div class="navbar-start navbar-menu is-active">
+            
+
+    <a class="navbar-item" href="/egoscale/cli/" title="">exo cli</a>
+
+    <a class="navbar-item active" href="/egoscale/cs/" title="">cs in go</a>
+
+    <a class="navbar-item" href="https://godoc.org/github.com/exoscale/egoscale/" title="">godoc</a>
+
+    <a class="navbar-item" href="https://github.com/exoscale/egoscale/" title="">source</a>
+
+
+        </div>
+        <div class="navbar-end is-right navbar-menu">
+            <div style="margin-top:.7rem">
+                <a class="button is-primary" href="https://github.com/exoscale/egoscale/releases">
+                    <span class="icon"><i class="fas fa-download"></i></span>
+                    <span>Download</span>
+                </a>
+                <iframe src="https://ghbtns.com/github-btn.html?user=exoscale&repo=egoscale&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    
+<section class="hero is-light is-bold">
+<div class="hero-body">
+<div class="container">
+  <h1 class="title is-1 is-spaced">cs listResourceLimits</h1>
+  <p class="subtitle">Lists esource limits.</p>
+</div>
+</div>
+</section>
+
+<div class="container">
+  <div class="content">
+    <p></p>
+
+<h2 id="flags">Flags</h2>
+
+<p>&ndash; <code>--account value</code> - list resources by account. Must be used with the domainId parameter.<br />
+&ndash; <code>--domainid value</code> - list only resources belonging to the domain specified<br />
+&ndash; <code>--id value</code> - Lists resource limits by ID. (default: 0)<br />
+&ndash; <code>--isrecursive value</code> - defaults to false, but if true, lists all resources from the parent specified by the domainId till leaves. (default: unset)<br />
+&ndash; <code>--keyword value</code> - List by keyword<br />
+&ndash; <code>--listall value</code> - If set to false, list only resources belonging to the command&rsquo;s caller; if set to true - list resources that the caller is authorized to see. Default value is false (default: unset)<br />
+&ndash; <code>--page value</code> - (default: 0)<br />
+&ndash; <code>--pagesize value</code> - (default: 0)<br />
+&ndash; <code>--resourcetype value</code> - Type of resource. Values are 0, 1, 2, 3, 4, 6, 7, 8, 9, 10 and 11. 0 - Instance. Number of instances a user can create. 1 - IP. Number of public IP addresses an account can own. 2 - Volume. Number of disk volumes an account can own. 3 - Snapshot. Number of snapshots an account can own. 4 - Template. Number of templates an account can register/create. 5 - Project. Number of projects an account can own. 6 - Network. Number of networks an account can own. 7 - VPC. Number of VPC an account can own. 8 - CPU. Number of CPU an account can allocate for his resources. 9 - Memory. Amount of RAM an account can allocate for his resources. 10 - PrimaryStorage. Total primary storage space (in GiB) a user can use. 11 - SecondaryStorage. Total secondary storage space (in GiB) a user can use. 12 - Elastic IP. Number of public elastic IP addresses an account can own. 13 - SMTP. If the account is allowed SMTP outbound traffic. (default: VirtualMachineType)<br />
+&ndash; <code>--resourcetypename value</code> - Type of resource (wins over resourceType if both are provided). Values are: user_vm - Instance. Number of instances a user can create. public_ip - IP. Number of public IP addresses an account can own. volume - Volume. Number of disk volumes an account can own. snapshot - Snapshot. Number of snapshots an account can own. template - Template. Number of templates an account can register/create. project - Project. Number of projects an account can own. network - Network. Number of networks an account can own. vpc - VPC. Number of VPC an account can own. cpu - CPU. Number of CPU an account can allocate for his resources. memory - Memory. Amount of RAM an account can allocate for his resources. primary_storage - PrimaryStorage. Total primary storage space (in GiB) a user can use. secondary_storage - SecondaryStorage. Total secondary storage space (in GiB) a user can use. public_elastic_ip - IP. Number of public elastic IP addresses an account can own. smtp - SG. If the account is allowed SMTP outbound traffic.<br />
+&ndash; <code>--debug, -d</code> -<br />
+&ndash; <code>--dry-run, -D</code> -<br />
+&ndash; <code>--region value, -r value</code> -</p>
+
+<h2 id="global-flags">Global Flags</h2>
+
+<p>&ndash; <code>--debug, -d</code> - debug mode on<br />
+&ndash; <code>--dry-run, -D</code> - produce a cURL ready URL<br />
+&ndash; <code>--dry-json, -j</code> - produce a JSON preview of the query<br />
+&ndash; <code>--region value, -r value</code> - cloudstack.ini file section name<br />
+&ndash; <code>--theme value, -t value</code> - syntax highlighting theme, see: <a href="https://xyproto.github.io/splash/docs/">https://xyproto.github.io/splash/docs/</a><br />
+&ndash; <code>--help, -h</code> - show help<br />
+&ndash; <code>--version, -v</code> - print the version</p>
+
+<h6 id="auto-generated-by-urfave-cli-on-14-jun-2018">Auto generated by urfave/cli on 14-Jun-2018</h6>
+  </div>
+</div>
+
+</main>
+
+
+
+<footer class="footer" style="clear:both">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>Made with ❤️ in Crissier, Switzerland 🇨🇭.</p>
+            <p>Gopher made with <a href="https://gopherize.me/">Gopherize.me</a>.
+            Hosted on <a href="https://github.com/exoscale/egoscale">GitHub</a>.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>

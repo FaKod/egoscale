@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>
+  cs deployVirtualMachine &ndash; Egoscale, the Go toolbox for Exoscale
+</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://exoscale.github.io/egoscale">Egoscale library</a>
+        </div>
+        <div class="navbar-start navbar-menu is-active">
+            
+
+    <a class="navbar-item" href="/egoscale/cli/" title="">exo cli</a>
+
+    <a class="navbar-item active" href="/egoscale/cs/" title="">cs in go</a>
+
+    <a class="navbar-item" href="https://godoc.org/github.com/exoscale/egoscale/" title="">godoc</a>
+
+    <a class="navbar-item" href="https://github.com/exoscale/egoscale/" title="">source</a>
+
+
+        </div>
+        <div class="navbar-end is-right navbar-menu">
+            <div style="margin-top:.7rem">
+                <a class="button is-primary" href="https://github.com/exoscale/egoscale/releases">
+                    <span class="icon"><i class="fas fa-download"></i></span>
+                    <span>Download</span>
+                </a>
+                <iframe src="https://ghbtns.com/github-btn.html?user=exoscale&repo=egoscale&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    
+<section class="hero is-light is-bold">
+<div class="hero-body">
+<div class="container">
+  <h1 class="title is-1 is-spaced">cs deployVirtualMachine</h1>
+  <p class="subtitle">Creates and automatically starts a virtual machine based on a service offering, disk offering, and template.</p>
+</div>
+</div>
+</section>
+
+<div class="container">
+  <div class="content">
+    <p></p>
+
+<h2 id="flags">Flags</h2>
+
+<p>&ndash; <code>--account value</code> - an optional account for the virtual machine. Must be used with domainId.<br />
+&ndash; <code>--affinitygroupids value</code> - comma separated list of affinity groups id that are going to be applied to the virtual machine. Mutually exclusive with affinitygroupnames parameter<br />
+&ndash; <code>--affinitygroupnames value</code> - comma separated list of affinity groups names that are going to be applied to the virtual machine.Mutually exclusive with affinitygroupids parameter<br />
+&ndash; <code>--customid value</code> - an optional field, in case you want to set a custom id to the resource. Allowed to Root Admins only<br />
+&ndash; <code>--deploymentplanner value</code> - Deployment planner to use for vm allocation. Available to ROOT admin only<br />
+&ndash; <code>--details value</code> - used to specify the custom parameters.<br />
+&ndash; <code>--diskofferingid value</code> - the ID of the disk offering for the virtual machine. If the template is of ISO format, the diskOfferingId is for the root disk volume. Otherwise this parameter is used to indicate the offering for the data disk volume. If the templateId parameter passed is from a Template object, the diskOfferingId refers to a DATA Disk Volume created. If the templateId parameter passed is from an ISO object, the diskOfferingId refers to a ROOT Disk Volume created.<br />
+&ndash; <code>--displayname value</code> - an optional user generated name for the virtual machine<br />
+&ndash; <code>--displayvm value</code> - an optional field, whether to the display the vm to the end user or not. (default: unset)<br />
+&ndash; <code>--domainid value</code> - an optional domainId for the virtual machine. If the account parameter is used, domainId must also be used.<br />
+&ndash; <code>--group value</code> - an optional group for the virtual machine<br />
+&ndash; <code>--hostid value</code> - destination Host ID to deploy the VM to - parameter available for root admin only<br />
+&ndash; <code>--hypervisor value</code> - the hypervisor on which to deploy the virtual machine<br />
+&ndash; <code>--ip4 value</code> - True to set an IPv4 to the default interface (default: unset)<br />
+&ndash; <code>--ip6 value</code> - True to set an IPv6 to the default interface (default: unset)<br />
+&ndash; <code>--ip6address value</code> - the ipv6 address for default vm&rsquo;s network<br />
+&ndash; <code>--ipaddress value</code> - the ip address for default vm&rsquo;s network<br />
+&ndash; <code>--keyboard value</code> - an optional keyboard device type for the virtual machine. valid value can be one of de,de-ch,es,fi,fr,fr-be,fr-ch,is,it,jp,nl-be,no,pt,uk,us<br />
+&ndash; <code>--keypair value</code> - name of the ssh key pair used to login to the virtual machine<br />
+&ndash; <code>--name value</code> - host name for the virtual machine<br />
+&ndash; <code>--networkids value</code> - list of network ids used by virtual machine. Can&rsquo;t be specified with ipToNetworkList parameter<br />
+&ndash; <code>--rootdisksize value</code> - Optional field to resize root disk on deploy. Value is in GB. Only applies to template-based deployments. Analogous to details[0].rootdisksize, which takes precedence over this parameter if both are provided (default: 0)<br />
+&ndash; <code>--securitygroupids value</code> - comma separated list of security groups id that going to be applied to the virtual machine. Should be passed only when vm is created from a zone with Basic Network support. Mutually exclusive with securitygroupnames parameter<br />
+&ndash; <code>--securitygroupnames value</code> - comma separated list of security groups names that going to be applied to the virtual machine. Should be passed only when vm is created from a zone with Basic Network support. Mutually exclusive with securitygroupids parameter<br />
+&ndash; <code>--serviceofferingid value</code> - [required] the ID of the service offering for the virtual machine<br />
+&ndash; <code>--size value</code> - the arbitrary size for the DATADISK volume. Mutually exclusive with diskOfferingId (default: 0)<br />
+&ndash; <code>--startvm value</code> - true if start vm after creating. Default value is true (default: unset)<br />
+&ndash; <code>--templateid value</code> - [required] the ID of the template for the virtual machine<br />
+&ndash; <code>--userdata value</code> - an optional binary data that can be sent to the virtual machine upon a successful deployment. This binary data must be base64 encoded before adding it to the request. Using HTTP GET (via querystring), you can send up to 2KB of data after base64 encoding. Using HTTP POST(via POST body), you can send up to 32K of data after base64 encoding.<br />
+&ndash; <code>--zoneid value</code> - [required] availability zone for the virtual machine<br />
+&ndash; <code>--debug, -d</code> -<br />
+&ndash; <code>--dry-run, -D</code> -<br />
+&ndash; <code>--region value, -r value</code> -</p>
+
+<h2 id="global-flags">Global Flags</h2>
+
+<p>&ndash; <code>--debug, -d</code> - debug mode on<br />
+&ndash; <code>--dry-run, -D</code> - produce a cURL ready URL<br />
+&ndash; <code>--dry-json, -j</code> - produce a JSON preview of the query<br />
+&ndash; <code>--region value, -r value</code> - cloudstack.ini file section name<br />
+&ndash; <code>--theme value, -t value</code> - syntax highlighting theme, see: <a href="https://xyproto.github.io/splash/docs/">https://xyproto.github.io/splash/docs/</a><br />
+&ndash; <code>--help, -h</code> - show help<br />
+&ndash; <code>--version, -v</code> - print the version</p>
+
+<h6 id="auto-generated-by-urfave-cli-on-14-jun-2018">Auto generated by urfave/cli on 14-Jun-2018</h6>
+  </div>
+</div>
+
+</main>
+
+
+
+<footer class="footer" style="clear:both">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>Made with ❤️ in Crissier, Switzerland 🇨🇭.</p>
+            <p>Gopher made with <a href="https://gopherize.me/">Gopherize.me</a>.
+            Hosted on <a href="https://github.com/exoscale/egoscale">GitHub</a>.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
