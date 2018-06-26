@@ -35,11 +35,6 @@ type DNSDomainResponse struct {
 	Domain *DNSDomain `json:"domain"`
 }
 
-// DNSDomainsResponse represents a domains get response
-type DNSDomainsResponse struct {
-	Domain []DNSDomain `json:"domain"`
-}
-
 // DNSRecord represents a DNS record
 type DNSRecord struct {
 	ID         int64  `json:"id,omitempty"`
@@ -117,13 +112,13 @@ func (client *Client) GetDomain(name string) (*DNSDomain, error) {
 }
 
 // GetDomains gets all DNS domain
-func (client *Client) GetDomains() (*DNSDomainsResponse, error) {
+func (client *Client) GetDomains() ([]DNSDomainResponse, error) {
 	resp, err := client.dnsRequest("/v1/domains", "", "GET")
 	if err != nil {
 		return nil, err
 	}
 
-	var d *DNSDomainsResponse
+	var d []DNSDomainResponse
 	if err := json.Unmarshal(resp, &d); err != nil {
 		return nil, err
 	}
